@@ -493,8 +493,7 @@ footer {
     padding: 22px 16px;
   }
 }
-/* BACKGROUND ISI TEMPLATE 01 - BURGUNDY FLORAL */
-
+/* BACKGROUND BURGUNDY FLORAL */
 #invitation {
   position: relative;
   background-color: #E9B8B6;
@@ -504,16 +503,39 @@ footer {
   background-repeat: repeat-y;
 }
 
-#invitation .section {
-  background-color: rgba(255, 239, 235, 0.48) !important;
+/* SEMUA BAGIAN ISI UNDANGAN */
+#invitation > section {
   background-image: none !important;
+  background-color: rgba(255, 239, 235, 0.35) !important;
+  position: relative;
 }
 
+/* COUNTDOWN DAN PENUTUP */
+#invitation > .countdown,
+#invitation > .closing {
+  background-color: rgba(90, 20, 38, 0.38) !important;
+  color: white;
+}
+
+/* KARTU ACARA, AMPLOP, DAN RSVP */
 #invitation .event-card,
 #invitation .gift-card,
 #invitation .rsvp-form {
-  background: rgba(255, 248, 244, 0.93);
+  background: rgba(255, 248, 244, 0.94) !important;
   border: 1px solid #B77A7B;
+}
+
+/* JUDUL */
+#invitation .section-title {
+  color: #702638;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* HP */
+@media (max-width: 600px) {
+  #invitation {
+    background-size: 100% auto;
+  }
 }
 
 #invitation .section-title {
