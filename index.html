@@ -493,15 +493,26 @@ footer {
     padding: 22px 16px;
   }
 }
-/* Background floral untuk bagian isi undangan */
-#invitation {
-  background-image: url("Romantic Burgundy Floral Petal Frame.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/* Background floral untuk seluruh isi undangan */
+#invitation,
+#invitation .section,
+#invitation .intro,
+#invitation .couple,
+#invitation .countdown,
+#invitation .event,
+#invitation .gift,
+#invitation .rsvp,
+#invitation .gallery,
+#invitation .closing {
+  background-color: transparent !important;
 }
-  
+
+#invitation {
+  background-image: url("./Romantic%20Burgundy%20Floral%20Petal%20Frame.png") !important;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: repeat-y;
+} 
 </style>
 </head>
 
