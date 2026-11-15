@@ -184,7 +184,7 @@ section {
 /* COUNTDOWN */
 .countdown {
   background: var(--sage);
-  color: white;
+  color: rgba(70, 5, 5, 0.747);
 }
 
 .countdown .eyebrow { color: #eee1c9; }
@@ -248,7 +248,7 @@ section {
   margin-top: 22px;
   padding: 12px 25px;
   background: var(--sage);
-  color: white;
+  color: rgb(231, 197, 197);
   text-decoration: none;
   border-radius: 30px;
   font-size: 12px;
@@ -493,26 +493,135 @@ footer {
     padding: 22px 16px;
   }
 }
-/* Background floral untuk seluruh isi undangan */
-#invitation,
-#invitation .section,
+
+/* =========================================
+   WARNA TULISAN BURGUNDY FLORAL
+   HANYA MENGUBAH TEKS
+   BACKGROUND DAN KOTAK TETAP ASLI
+========================================= */
+
+/* WEDDING CELEBRATION */
+#invitation .event .eyebrow {
+  color: #9B5366;
+}
+
+#invitation .event .section-title {
+  color: #8F3D55;
+}
+
+/* TULISAN DALAM BOX AKAD DAN RESEPSI */
+#invitation .event-card h3 {
+  color: #8F3D55;
+}
+
+#invitation .event-card p {
+  color: #653344;
+}
+
+/* WEDDING GIFT */
+#invitation .gift-section .eyebrow {
+  color: #9B5366;
+}
+
+#invitation .gift-section .section-title {
+  color: #8F3D55;
+}
+
+#invitation .gift-section .description {
+  color: #653344;
+}
+
+#invitation .gift-card h3 {
+  color: #8F3D55;
+}
+
+#invitation .gift-owner,
+#invitation .gift-number,
+#invitation .qris-note {
+  color: #653344;
+}
+
+/* KONFIRMASI KEHADIRAN */
+#invitation .rsvp-section .eyebrow {
+  color: #9B5366;
+}
+
+#invitation .rsvp-section .section-title {
+  color: #8F3D55;
+}
+
+#invitation .rsvp-section .description {
+  color: #653344;
+}
+
+#invitation .rsvp-field label {
+  color: #8F3D55;
+}
+
+#invitation .rsvp-field input,
+#invitation .rsvp-field select,
+#invitation .rsvp-field textarea {
+  color: #653344;
+}
+
+/* GALERI */
+#invitation .gallery .eyebrow {
+  color: #9B5366;
+}
+
+#invitation .gallery .section-title {
+  color: #8F3D55;
+}
+
+#invitation .gallery .description {
+  color: #653344;
+}
+/* BACKGROUND SELURUH ISI UNDANGAN */
+#invitation {
+  background-image: url("Romantic Burgundy.png");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+/* Hapus background warna tiap section agar gambar terlihat */
 #invitation .intro,
 #invitation .couple,
 #invitation .countdown,
 #invitation .event,
-#invitation .gift,
-#invitation .rsvp,
 #invitation .gallery,
+#invitation .gift-section,
+#invitation .rsvp-section,
 #invitation .closing {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
-#invitation {
-  background-image: url("Romantic Burgudy Floral Petal Frame.png") !important;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: repeat-y;
-} 
+/* WARNA SEMUA TULISAN BAGIAN CLOSING */
+#invitation .closing,
+#invitation .closing p,
+#invitation .closing span,
+#invitation .closing small,
+#invitation .closing .description {
+  color: #653344 !important;
+  opacity: 1 !important;
+}
+
+/* JUDUL CLOSING */
+#invitation .closing h1,
+#invitation .closing h2,
+#invitation .closing h3,
+#invitation .closing .section-title {
+  color: #8F3D55 !important;
+  opacity: 1 !important;
+}
+
+/* TULISAN KECIL / EYEBROW */
+#invitation .closing .eyebrow,
+#invitation .closing .eyebrow * {
+  color: #8F3D55 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
 </style>
 </head>
 
